@@ -1,0 +1,35 @@
+# ChaseKit
+
+> ChaseKit is an open-source invoice-chasing layer that sits on top of whatever a freelancer or small business already invoices with. By TechAurah.
+
+Key facts:
+- License: MIT. Runtime: Python 3.11+, zero runtime dependencies, standard library only.
+- It is not an invoicing app: it creates no invoices, takes no payments, and does no accounting.
+- Inputs: a CSV invoice export from any tool or spreadsheet, or self-hosted Invoice Ninja.
+- It detects overdue invoices, calculates statutory late-payment interest (UK: Bank of England base rate + 8%, fixed fee £40/£70/£100, Late Payment of Commercial Debts (Interest) Act 1998; EU: reference rate + 8 points, minimum €40, Directive 2011/7/EU; US: configurable, zero by default), and works a four-stage reminder ladder.
+- Safety property: dry-run is the default. Nothing is sent without a human approving the batch in approve mode, and a SQLite chase log prevents any client being chased twice for the same stage.
+- Current version: 0.1.0.
+
+## Documentation
+
+- [README](https://github.com/techaurah/chasekit): Full overview, quickstart, comparison, and FAQ
+- [Interest rules](https://github.com/techaurah/chasekit/blob/main/docs/interest-rules.md): The UK and EU statutes ChaseKit encodes, worked numbers, and what to check each half-year
+- [Tone guide](https://github.com/techaurah/chasekit/blob/main/docs/tone-guide.md): How the four-stage reminder ladder is worded, and why each stage reads the way it does
+- [Invoice sources](https://github.com/techaurah/chasekit/blob/main/docs/sources.md): The CSV format, the Invoice Ninja source, and its honest status
+
+## Examples
+
+- [Demo walkthrough](https://github.com/techaurah/chasekit/blob/main/examples/demo.md): Full flow on seven fake invoices (plan, dry run with a rendered message, report), runnable with zero credentials
+- [Example invoices](https://github.com/techaurah/chasekit/blob/main/examples/invoices.csv): The CSV format itself, covering all four stages and three jurisdictions
+
+## Use it
+
+- [Install](https://github.com/techaurah/chasekit): Clone the repository and run pip install -e . (Python 3.11+, no accounts or credentials needed for the demo path)
+- [Releases](https://github.com/techaurah/chasekit/releases): Version history and downloads
+
+## Optional
+
+- [Contributing](https://github.com/techaurah/chasekit/blob/main/CONTRIBUTING.md): How to contribute, including jurisdiction packs and template packs
+- [TechAurah profile](https://github.com/techaurah): The other five open-source projects
+- [TechAurah website](https://techaurah.com): The company behind the project
+- [TechAurah on LinkedIn](https://www.linkedin.com/company/techaurah/): Company updates and articles
