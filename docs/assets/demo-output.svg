@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1124" height="467" viewBox="0 0 1124 467" role="img" aria-label="Real ChaseKit plan output on the example invoices, as of 2026-01-31">
+<rect width="1124" height="467" rx="18" fill="#0B1F3A"/>
+<rect x="0" y="0" width="1124" height="56" rx="18" fill="#0E2A4F"/>
+<rect x="0" y="28" width="1124" height="28" fill="#0E2A4F"/>
+<circle cx="34" cy="28" r="6.5" fill="#FF5F57"/>
+<circle cx="56" cy="28" r="6.5" fill="#FEBC2E"/>
+<circle cx="78" cy="28" r="6.5" fill="#28C840"/>
+<text x="562.0" y="35" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#EAF6FF" text-anchor="middle">Real plan output</text>
+<text x="1094" y="35" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#9DB8D2" text-anchor="end">nothing sent</text>
+<text x="36" y="96" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5"><tspan fill="#00CEFF" font-weight="700">$ </tspan><tspan fill="#EAF6FF">chasekit --csv examples/invoices.csv --business-name &quot;Bright Studio&quot; --as-of 2026-01-31 plan</tspan></text>
+<text x="36" y="121" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">Chase plan as of 2026-01-31 (nothing sent):</text>
+<text x="36" y="146" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">  INV-1001   Maple Design Studio          stage 1 (friendly), 4 days overdue, interest £1.12, fee £40.00, total £891.12</text>
+<text x="36" y="171" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">  INV-1002   Brightpath Consulting        stage 2 (firm), 16 days overdue, interest £12.62, fee £70.00, total £2,482.62</text>
+<text x="36" y="196" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">  INV-1003   Koeln Media GmbH             stage 3 (final), 29 days overdue, interest €40.32, fee €40.00, total €5,080.32</text>
+<text x="36" y="221" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">  INV-1004   Hartley Construction         stage 4 (escalation), 47 days overdue, interest £185.42, fee £100.00, total £12,285.42</text>
+<text x="36" y="246" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">  INV-1007   Denver Dental Group          stage 1 (friendly), 11 days overdue, interest $0.00, fee $0.00, total $1,500.00</text>
+<text x="36" y="271" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5"><tspan fill="#00CEFF" font-weight="700">$ </tspan><tspan fill="#EAF6FF">chasekit --csv examples/invoices.csv --as-of 2026-01-31 report</tspan></text>
+<text x="36" y="296" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">Outstanding report as of 2026-01-31</text>
+<text x="36" y="321" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">By age band:</text>
+<text x="36" y="346" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#EAF6FF">  15-30 days 2 invoice(s): €5,080.32; £2,482.62</text>
+<text x="36" y="371" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" fill="#9DB8D2">...</text>
+<text x="36" y="396" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" font-size="13.5" font-weight="700" fill="#EAF6FF">Total outstanding (principal + interest + fees): €5,080.32; £15,659.16; $1,500.00</text>
+<text x="36" y="447" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12.5" fill="#9DB8D2">Run on examples/invoices.csv and pinned to 2026-01-31, exactly as in examples/demo.md. Amounts are calculated per jurisdiction statute; the US invoice is honestly $0.00.</text>
+</svg>
