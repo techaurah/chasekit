@@ -1,0 +1,45 @@
+chasekit/                          The open-source invoice-chasing layer (v0.1.0, MIT)
+|
+|-- src/chasekit/                  The package: pure logic kept apart from I/O
+|   |-- cli.py                     Entry point: plan, run and report commands
+|   |-- engine.py                  Overdue detection, stage ladder, template rendering, sending
+|   |-- models.py                  Invoice model; money is Decimal, never float
+|   |-- config.py                  Settings: statutory rates are configuration, not constants
+|   |-- store.py                   SQLite chase log; only a real send blocks a repeat stage
+|   |-- interest/                  One module per jurisdiction pack
+|   |   |-- base.py                Shared simple-interest maths, half-up rounding to cents
+|   |   |-- uk.py                  Bank of England base rate + 8%, fees GBP 40 / 70 / 100
+|   |   |                          (Late Payment of Commercial Debts (Interest) Act 1998)
+|   |   |-- eu.py                  Reference rate + 8 points, minimum EUR 40 fee
+|   |   |                          (Directive 2011/7/EU)
+|   |   `-- us.py                  Configurable rate and fee, zero by default:
+|   |                              no US federal statutory rate exists
+|   |-- sources/                   Where invoices come from (one load() interface)
+|   |   |-- csv_source.py          Any CSV export; fully working, no credentials
+|   |   `-- invoice_ninja.py       Invoice Ninja API; implemented, needs your instance + token
+|   |-- senders/                   How messages leave (one send() interface)
+|   |   |-- dryrun.py              Default sender: captures messages, sends nothing
+|   |   `-- email.py               SMTP sender, used only on the approve path
+|   `-- templates/en/              The tone ladder, as Markdown data (edit wording here)
+|       |-- stage1-friendly.md     Day 1+
+|       |-- stage2-firm.md         Day 14+
+|       |-- stage3-final.md        Day 28+
+|       `-- stage4-escalation.md   Day 42+, a handoff notice for the human
+|
+|-- tests/                         29 automated tests mirroring the package
+|-- examples/
+|   |-- invoices.csv               Demo data: 7 invoices, 4 stages, 3 jurisdictions
+|   `-- demo.md                    Full dry-run walkthrough on the demo data
+|-- docs/
+|   |-- interest-rules.md          The statutes, worked numbers, half-year rate checks
+|   |-- sources.md                 CSV format and Invoice Ninja status
+|   |-- tone-guide.md              Why the ladder is worded the way it is
+|   `-- assets/                    README visuals (demo output, architecture, workflow, structure)
+|-- .github/workflows/ci.yml       CI on every push and pull request
+|-- .env.example                   SMTP configuration template for approve-mode sending
+|-- pyproject.toml                 Zero runtime dependencies; Python 3.11+; CLI entry point
+|-- README.md                      Project overview and quickstart
+|-- ROADMAP.md                     Now / Next / Later
+|-- CONTRIBUTING.md                How to add a jurisdiction pack or template pack
+|-- SECURITY.md                    Private vulnerability reporting
+`-- LICENSE                        MIT
