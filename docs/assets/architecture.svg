@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="500" viewBox="0 0 1240 500" role="img" aria-label="ChaseKit architecture: invoice sources feed the chase engine, which applies jurisdiction interest packs and tone-ladder templates, then sends through the dry-run or SMTP sender and logs every action in SQLite">
+<rect width="1240" height="500" rx="18" fill="#0B1F3A"/>
+<text x="48" y="52" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#EAF6FF">How ChaseKit works</text>
+<text x="48" y="80" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9DB8D2">A chasing layer on top of the invoicing you already use. It creates no invoices, and nothing sends without approval.</text>
+<rect x="48" y="116" width="252" height="196" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="70" y="154" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#EAF6FF">INVOICE SOURCES</text>
+<text x="70" y="184" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">CsvSource: any CSV export,</text>
+<text x="70" y="208" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">fully working, no credentials.</text>
+<text x="70" y="232" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2"></text>
+<text x="70" y="256" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">InvoiceNinjaSource: your own</text>
+<text x="70" y="280" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">Invoice Ninja instance and API</text>
+<text x="70" y="304" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">token (implemented in v0.1).</text>
+<line x1="300" y1="214" x2="342" y2="214" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="342,208 354,214 342,220" fill="#00CEFF"/>
+<text x="326.0" y="202" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF" text-anchor="middle">load()</text>
+<rect x="352" y="104" width="520" height="268" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="376" y="142" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#00CEFF">CHASE ENGINE · engine.py</text>
+<text x="376" y="172" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">plan(): detect overdue invoices, pick the stage</text>
+<text x="376" y="196" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">run(): dry run by default, real send only on approve</text>
+<text x="376" y="220" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">report(): outstanding by age band and by client</text>
+<rect x="376" y="252" width="472" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="390" y="271" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#EAF6FF">Stage ladder (days overdue): <tspan fill="#9DB8D2">1 friendly · 2 firm · 3 final · 4 escalation</tspan></text>
+<rect x="376" y="288" width="472" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="390" y="307" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#EAF6FF">Interest packs (interest/): <tspan fill="#9DB8D2">UK base + 8% · EU ref + 8 · US configured</tspan></text>
+<rect x="376" y="324" width="472" height="28" rx="7" fill="#0E2A4F" stroke="#2A5A8F"/>
+<text x="390" y="343" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#EAF6FF">Templates (templates/en/): <tspan fill="#9DB8D2">4 Markdown tone-ladder templates</tspan></text>
+<line x1="872" y1="214" x2="914" y2="214" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="914,208 926,214 914,220" fill="#00CEFF"/>
+<text x="898.0" y="202" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF" text-anchor="middle">send()</text>
+<rect x="924" y="108" width="268" height="132" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="946" y="146" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#00CEFF">SENDERS</text>
+<text x="946" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">DryRunSender: the default,</text>
+<text x="946" y="200" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">captures messages, sends nothing.</text>
+<text x="946" y="224" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">EmailSender: SMTP, approve path only.</text>
+<rect x="924" y="252" width="268" height="120" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2"/>
+<text x="946" y="290" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#00CEFF">SQLITE CHASE LOG</text>
+<text x="946" y="320" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">store.py records every action.</text>
+<text x="946" y="344" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">Only a real send blocks a repeat</text>
+<text x="946" y="368" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">of the same stage. No double chasing.</text>
+<text x="48" y="474" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Money is Decimal throughout, never float. Zero runtime dependencies: Python standard library only, Python 3.11+.</text>
+</svg>

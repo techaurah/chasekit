@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="678" viewBox="0 0 1180 678" role="img" aria-label="ChaseKit repository structure">
+<rect width="1180" height="678" rx="18" fill="#0B1F3A"/>
+<text x="44" y="50" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#EAF6FF">Repository structure</text>
+<text x="44" y="86" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="700" fill="#00CEFF">chasekit/</text>
+<text x="44" y="116" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ src/chasekit/</text>
+<text x="232" y="116" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">the package: pure logic kept apart from I/O</text>
+<text x="44" y="146" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ cli.py</text>
+<text x="201" y="146" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">entry point: plan, run and report commands</text>
+<text x="44" y="176" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ engine.py</text>
+<text x="232" y="176" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">overdue detection, stage ladder, rendering</text>
+<text x="44" y="206" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ models.py</text>
+<text x="232" y="206" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">Invoice model, Decimal money formatting</text>
+<text x="44" y="236" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ config.py</text>
+<text x="232" y="236" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">settings: rates are configuration, not constants</text>
+<text x="44" y="266" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ store.py</text>
+<text x="222" y="266" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">SQLite chase log, duplicate prevention</text>
+<text x="44" y="296" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ interest/</text>
+<text x="232" y="296" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">one module per jurisdiction pack</text>
+<text x="44" y="326" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   │   ├─ uk.py</text>
+<text x="232" y="326" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">base rate + 8%, fees GBP 40 / 70 / 100 (1998 Act)</text>
+<text x="44" y="356" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   │   ├─ eu.py</text>
+<text x="232" y="356" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">reference rate + 8 points, min EUR 40 fee (Directive 2011/7/EU)</text>
+<text x="44" y="386" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   │   └─ us.py</text>
+<text x="232" y="386" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">configurable, zero by default, no federal statute</text>
+<text x="44" y="416" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ sources/</text>
+<text x="222" y="416" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">CSV export and Invoice Ninja inputs</text>
+<text x="44" y="446" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   ├─ senders/</text>
+<text x="222" y="446" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">dry run (default) and SMTP (approve path only)</text>
+<text x="44" y="476" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">│   └─ templates/en/</text>
+<text x="272" y="476" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">the four tone-ladder reminder templates</text>
+<text x="44" y="506" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ tests/</text>
+<text x="161" y="506" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">29 automated tests mirroring the package</text>
+<text x="44" y="536" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ examples/</text>
+<text x="191" y="536" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">demo CSV, 7 invoices, and the dry-run walkthrough</text>
+<text x="44" y="566" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ docs/</text>
+<text x="151" y="566" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">interest rules, invoice sources, tone guide</text>
+<text x="44" y="596" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">├─ .github/workflows/</text>
+<text x="282" y="596" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">CI on every push and pull request</text>
+<text x="44" y="626" font-family="Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="16.5" font-weight="400" fill="#EAF6FF">└─ pyproject.toml</text>
+<text x="242" y="626" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB8D2">zero runtime dependencies, Python 3.11+</text>
+</svg>

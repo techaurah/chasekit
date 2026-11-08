@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="430" viewBox="0 0 1240 430" role="img" aria-label="ChaseKit workflow: an overdue invoice climbs a four-stage tone ladder, each reminder is calculated and rendered, a human approves the batch, and only then is it sent and logged">
+<rect width="1240" height="430" rx="18" fill="#0B1F3A"/>
+<text x="48" y="52" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#EAF6FF">The chasing workflow</text>
+<text x="48" y="80" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9DB8D2">From overdue invoice to approved send. Stage 4 is a handoff: a prepared final notice for you to act on, not legal action.</text>
+<rect x="48" y="104" width="264" height="104" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="66" y="136" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">1 · OVERDUE</text>
+<text x="66" y="162" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">Invoice passes its due</text>
+<text x="66" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">date unpaid. The engine</text>
+<text x="66" y="202" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">counts days overdue.</text>
+<line x1="316" y1="156" x2="333" y2="156" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="333,150 345,156 333,162" fill="#00CEFF"/>
+<rect x="341" y="104" width="264" height="104" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="359" y="136" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">2 · STAGE LADDER</text>
+<text x="359" y="162" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">Day 1 friendly, day 14 firm,</text>
+<text x="359" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">day 28 final, day 42</text>
+<text x="359" y="202" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">escalation handoff.</text>
+<line x1="609" y1="156" x2="626" y2="156" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="626,150 638,156 626,162" fill="#00CEFF"/>
+<rect x="634" y="104" width="264" height="104" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="652" y="136" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">3 · CALCULATE</text>
+<text x="652" y="162" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">Jurisdiction pack applies</text>
+<text x="652" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">statutory interest and the</text>
+<text x="652" y="202" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">fixed fee, Decimal exact.</text>
+<line x1="902" y1="156" x2="919" y2="156" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="919,150 931,156 919,162" fill="#00CEFF"/>
+<rect x="927" y="104" width="264" height="104" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="945" y="136" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">4 · RENDER</text>
+<text x="945" y="162" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">The stage template is filled</text>
+<text x="945" y="182" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">with the real amounts and</text>
+<text x="945" y="202" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">the statute basis.</text>
+<line x1="1160" y1="208" x2="1160" y2="238" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="1154,238 1166,238 1160,250" fill="#00CEFF"/>
+<text x="48" y="240" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#00CEFF">THE APPROVAL GATE: steps 5 to 7 happen before any send, every time</text>
+<rect x="48" y="258" width="264" height="104" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="66" y="290" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">5 · CHECK THE LOG</text>
+<text x="66" y="316" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">SQLite log checked first: a</text>
+<text x="66" y="336" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">stage already sent is never</text>
+<text x="66" y="356" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">planned again.</text>
+<line x1="316" y1="310" x2="333" y2="310" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="333,304 345,310 333,316" fill="#00CEFF"/>
+<rect x="341" y="258" width="264" height="104" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="359" y="290" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">6 · REVIEW</text>
+<text x="359" y="316" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">plan and run (dry run) show</text>
+<text x="359" y="336" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">the full batch first.</text>
+<text x="359" y="356" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">Nothing has been sent.</text>
+<line x1="609" y1="310" x2="626" y2="310" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="626,304 638,310 626,316" fill="#00CEFF"/>
+<rect x="634" y="258" width="264" height="104" rx="12" fill="#12294D" stroke="#00CEFF" stroke-width="2.5"/>
+<text x="652" y="290" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">7 · HUMAN APPROVAL</text>
+<text x="652" y="316" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">Approve mode lists the batch.</text>
+<text x="652" y="336" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">You type YES. Only then</text>
+<text x="652" y="356" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">does anything send.</text>
+<line x1="902" y1="310" x2="919" y2="310" stroke="#00CEFF" stroke-width="2.5"/>
+<polygon points="919,304 931,310 919,316" fill="#00CEFF"/>
+<rect x="927" y="258" width="264" height="104" rx="12" fill="#12294D" stroke="#2A5A8F" stroke-width="1.5"/>
+<text x="945" y="290" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="700" fill="#00CEFF">8 · SEND + LOG</text>
+<text x="945" y="316" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">SMTP sends the reminder.</text>
+<text x="945" y="336" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">Logged as sent in SQLite,</text>
+<text x="945" y="356" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB8D2">blocking any repeat.</text>
+<text x="48" y="406" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#9DB8D2">Dry run is the default everywhere. A dry run is logged as dry_run and never blocks a later real send.</text>
+</svg>
